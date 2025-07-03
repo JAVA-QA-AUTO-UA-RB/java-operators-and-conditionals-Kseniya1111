@@ -7,8 +7,6 @@ public class Main {
         while (playAgain) {
             int health = 100;
             int luck = 50;
-
-
             System.out.println("Hello my friend!Ти потрапив у чарівний ліс, де тебе чекає багато пригод!");
             System.out.println("Ти маєш 100 пунктів здоров'я та 50 пунктів удачі");
             System.out.println("Ти йшов чарівною стежкою, і натрапив на роздоріжжя.Обери подальший шлях: 1 - піти наліво, 2 - піти направо:");
@@ -66,8 +64,7 @@ public class Main {
                             System.out.println("Невірне число, спробуй наново.");
                     }
 
-                }
-                else {
+                } else {
                     System.out.println("Це не число! Введи 1, 2 або 3.");
                     sc.next();
                 }
@@ -75,16 +72,12 @@ public class Main {
             if (health <= 0 || luck <= 0) {
                 System.out.println("Ви не змогли пройти ліс... Спробуйте ще раз!");
             } else System.out.println("Вітаю друже!Ти пройшов магічний ліс!:)");
-
-
-
-        System.out.println("Поточний результат здоров’я: " + health);
-        System.out.println("Поточний результат удачі: " + luck);
-        System.out.println("Бажаєш зіграти ще раз? Введи '1' для повтору або будь-яке інше число для виходу:");
-        int again = sc.nextInt();
-        playAgain = (again == 1);
-
-}
+            System.out.println("Поточний результат здоров’я: " + health);
+            System.out.println("Поточний результат удачі: " + luck);
+            System.out.println("Бажаєш зіграти ще раз? Введи '1' для повтору або будь-яке інше число для виходу:");
+            int again = sc.nextInt();
+            playAgain = (again == 1);
+        }
     }
 }
 
